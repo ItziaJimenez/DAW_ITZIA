@@ -1,0 +1,18 @@
+{
+  "name": "ProjectTwo",
+  "homepage": "https://github.com/ItziaJimenez/DAW_ITZIA",
+  "authors": [
+    "ItziaJimenez <ityupj94@gmail.com>"
+  ],
+  "description": "my second boostrap project",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
