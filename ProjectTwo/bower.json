@@ -14,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "fontawesome": "^5.1.0",
+    "hammerjs": "hammer.js#^2.0.8"
+  }
 }

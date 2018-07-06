@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!--se agrega la libreria de bootstrap para el proyecto-->
+<link rel="stylesheet" href="bower_components/boostrap/dist/css/bootstrap.css">
+<!--Se agrega la libreria de iconos-->
+<link rel="stylesheet" href="bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.css">
+<!--se agrega los estilos personalizados-->
+<link rel="stylesheet" href="css/style.class">
+</head>
+<body>
+  <!--aqui va la barra de navegación-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a href="index.html" class="navbar-brand">Company logo</a>
+    <button class="navbar-togger" data-toggle="collapse" data-target="#navegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navegacion" class="justify-content-end collapse navbar-collapse">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">HOME</a>
+    </li>
+      <li class="nav-item"></li>
+      <a href="products.html" class="nav-link">PRODUCTS</a>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">CONTACT US</a>
+      </li>
+      <li class="nav-item">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2"
+          type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+      </li>
+</ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <nav arial-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Product</a></li>
+        </ol>
+      </nav>
+    </div>
+    <div class="row">
+      <h1>Products. <small class="text-muted">We build amazing stuff</small></h1>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col md-6">
+        <h2>Product One</h2>
+        <p>This is an awsesome product onde description</p>
+      </div>
+      <div class="col md-6">
+        <div class="btn-group d-flex justify-content-end">
+          <button class="btn btn-primary">Buy now!</button>
+          <button class="btn btn-secondary">Free trial</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="carousel slide" id="carousel-product" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/large1.jpg" alt=""
+            class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/large2.jpg" alt="" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/large3.jpg" alt="" class="d-block w-100">
+          </div>
+        </div>
+      <a href="#carousel-product" class="carousel-control-prev" data-slide="prev" role="button">
+        <span class="carousel-control-prev-icon"></span>
+        <a href="#carousel-product" class="carousel-control-next" data-slide="next" role="button">
+          <span class="carousel-control-next-icon"></span>
+      </a>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- /.row -->
+  <hr>
+  <div class="row">
+      <div class="footer col-md-12">
+      <p class="text-center lead">
+        Wanna get in touch? Email us at ityupj94@gmail.com
+      </p>
+      <hr>
+      <ul class="list-unstyled text-center">
+        <li class="list-inline-item"><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href=""><i class="fab fa-facebook fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+      </ul>
+      <p class="text-center text-muted">
+        &copy; Copyright  Company name
+    </div>
+    <!-- /.footer -->
+
+  </div>
+  <!-- /.row -->
+  </div>
+  <div class="modal fade" id="modal-contact-form" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cotact US</h5>
+          <buttton class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </buttton>
+          <!-- /.close -->
+        </div> <!--End header-->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="contact-email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="contact-email">
+            </div>
+            <div class="form-group">
+              <label for="contact-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="contact name">
+            </div>
+  <div class="form-group">
+    <label for="contact-message"
+    class="col-form-label">Message:>/label>
+    <textarea id="contact-message" rows="20" cols="15"></textarea>
+  </div>
+</form>
+</div> <!--End body-->
+<div> class="modal-footer">
+  <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+
+</div>
+<!-- /.modal -->
+
+
+<!--se agrega la libreria de js -->
+<!--se agrega la libreria jquery para que bootstrap funcione -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/boostrap/dist/js/bootstrap.js">
+</script>
+<script src="bower_components\hammerjs\hammer.js"></script>
+<script>
+var $doby = document.body;
+var hammertime = new Hammer($doby);
+hammertime.on('swipeleft', function(ev) {
+	console.log(ev);
+});
+
+var hammertime = new Hammer($doby);
+hammertime.on('swiperight', function(ev) {
+	console.log(ev);
+});
+</script>
+
+</body>
+</html>
